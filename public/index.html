@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple POS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🧾 Simple POS</h1>
+
+  <div class="container">
+    <div class="products">
+      <h2>Products</h2>
+      <div id="productList"></div>
+    </div>
+
+    <div class="cart">
+      <h2>Cart</h2>
+      <ul id="cartList"></ul>
+      <p>Total: ₱<span id="total">0</span></p>
+      <input type="number" id="cash" placeholder="Cash received">
+      <p>Change: ₱<span id="change">0</span></p>
+      <button id="completeSale">Complete Sale</button>
+    </div>
+
+    <div class="report">
+      <h2>Daily Report</h2>
+      <p>Total Sales: <span id="totalSales">0</span></p>
+      <p>Total Income: ₱<span id="totalIncome">0</span></p>
+      <button id="refreshReport">Refresh Report</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
