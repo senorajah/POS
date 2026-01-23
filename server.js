@@ -44,9 +44,8 @@ db.serialize(() => {
   // 4️⃣ Insert default products safely
   db.run(`
     INSERT OR IGNORE INTO products (name, price) VALUES
-      ('Coffee', 50),
-      ('Tea', 40),
-      ('Sandwich', 100)
+      ('Cream Sandwich', 50),
+      ('Coffee', 80)
   `);
 
   console.log("✅ Tables verified and default products inserted!");

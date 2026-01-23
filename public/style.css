@@ -2,32 +2,51 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color:#fff6e5;
+  background-color:#fff;
   font-family: Arial, sans-serif;
   padding: 10px;
 }
 #title{
   color: #4a2e1f;
   font-size: 50px;
-
-  
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
 .container {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
-  background-color:#fff6e5 ;
   color: #4a2e1f;
-  border-radius: 50px;
-  
+  font-family: "Lilita One", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
 }
 
 
 .products, .cart, .report {
   border: 1px solid #ccc;
-  padding: 15px;
+  padding: 25px;
   width: 300px;
   min-height: 200px;
+  border-radius: 30px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+
+   transition:  
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease;
+}
+.products:hover, .cart:hover, .report:hover{
+  box-shadow: 0 6px 5px rgba(0,0,0,0.5);
+}
+
+#cash{
+  font-size: 15px;
+  width: 80%;
+  height: 10%;
 }
 
 button {
@@ -37,9 +56,32 @@ button {
 }
 
 #completeSale{
+padding: 10px;
+cursor: pointer;
+font-size: 20px;
+ color: #fff;
  background-color: #c58a2c;
+ width: 100%;
+ border-radius: 50px;
+ border: none;
+ font-family: "Permanent Marker", cursive;
+ font-weight: 400;
+ font-style: normal;
+ box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+
+  transition:  
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease;
 }
 
+#completeSale:hover{
+box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+border: 1px solid #c58a2c;
+background-color: #fff;
+color: #c58a2c;
+
+}
 #productList button {
   display: block;
   height: 100px;
@@ -48,4 +90,31 @@ button {
   border-radius: 10px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
   width: 100%;
+  cursor: pointer;
+
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+    transition:  
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background-color 0.15s ease;
+}
+#productList button:hover {
+  transform: translateY(-3px);            
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);   
+  background-color: #c58a2c;
+  border-color: #c58a2c;
+  color: #ccc;                      
+}
+
+#productList button:active{
+  transform: scale(0.96);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  background-color: #c58a2c;
+  border-color: #c58a2c;
+  color: #ccc;                      
+
+
 }
