@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>KURI PAN</title>
+  <title>POS</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Caveat+Brush&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Lilita+One&family=Sacramento&family=Satisfy&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
 <body>
   <main>
 
-       <h1 id="title">Kuri Pan</h1>
+       <h1 id="title"></h1>
 
   <div class="container">
     <div class="products">
@@ -26,6 +26,7 @@
 
     <div class="cart">
       <h2>Cart</h2>
+      <input type="text" id="customerName" placeholder="Costumer Name">
       <ul id="cartList"></ul>
       <p>Total: ₱<span id="total">0</span></p>
       <input type="number" id="cash" placeholder="Cash received">
@@ -40,6 +41,8 @@
       <button id="refreshReport">Refresh Report</button>
     </div>
   </div>
+
+
 
   <script src="script.js"></script>
   </main>
